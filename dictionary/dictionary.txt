@@ -1,0 +1,7 @@
+Apple - Яблоко
+Banana - Банан
+Dog - Собака
+Orange - Апельсин
+Cat - Кошка
+Table - Стол
+Hair - Волосы

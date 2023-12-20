@@ -1,0 +1,10 @@
+{% extends 'editing/base.html' %}
+
+{% block nav %}
+<li><a href="{% url 'dictionary' %}">Dictionary</a></li>
+<li><a href="{% url 'edit' %}">Edit dictionary</a></li>
+{% endblock %}
+
+{% block main_content%}
+<p>Welcome to dictionary</p>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'editing/base.html' %}
+
+{% block nav %}
+<li><a href="{% url 'index' %}">Home</a></li>
+<li><a href="{% url 'edit' %}">Edit dictionary</a></li>
+<li><a href="{% url 'export_txt' %}">Export dictionary</a></li>
+{% endblock %}
+{% block main_content%}
+<p>Слова</p>
+<table>
+    <tr>
+        <th>Английское слово</th>
+        <th>Русское слово</th>
+    </tr>
+    {% for word in object_list %}
+    <tr>
+        <td>{{ word.english }}</td>
+        <td>{{ word.russian }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}
